@@ -24,7 +24,8 @@ function App() {
     <>
       <h2 className="text-warning">App Component, nice job!</h2>
       <i className="fa fa-home" />
-      <Customer />
+      <Customer name="Brian" age={30} />
+      <Customer name="Ronnie"  />
     </>
   );
 }

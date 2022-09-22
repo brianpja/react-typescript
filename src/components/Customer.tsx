@@ -1,13 +1,16 @@
 import React from 'react';
 
-interface IProps {
-
+interface Props {
+	name: string;
+	age?: number;
 };
 
-let Customer:React.FC<IProps> = () => {
-  return(
+let Customer = ({name, age}: Props) => {
+
+	
+	return(
 		<>
-			<h2>Customer Component</h2>
+			<h2>Customer Component {name}{age ? `, ${age}` : ''}</h2>
 		</>
 	)
 };
