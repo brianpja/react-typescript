@@ -5,13 +5,14 @@ interface Props {
 	age?: number;
 };
 
-let Customer = ({name, age}: Props) => {
+const Customer = ({name, age}: Props) => {
 
 	
 	return(
-		<>
-			<h2>Customer Component {name}{age ? `, ${age}` : ''}</h2>
-		</>
+		<div className="customer">
+			<h2>Customer </h2>
+			<div>Name: {name}{age ? `, Age: ${age}` : ''}</div>
+		</div>
 	)
 };
 

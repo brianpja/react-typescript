@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Customer from './components/Customer';
+import ClassyCustomer from './components/ClassyCustomer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <i className="fa fa-home" />
       <Customer name="Brian" age={30} />
       <Customer name="Ronnie"  />
+      <ClassyCustomer name="Bobby" age={40} />
     </>
   );
 }
